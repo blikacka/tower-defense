@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MainActivity</string>
+    <string name="app_name">Tower Defence</string>
+	<string name="cant_build">Tady nejde stavět!</string>
+	<string name="no_money">Máme málo zlata!</string>
+	<string name="game_over">KONEC HRY</string>
+	<string name="play_again">HRÁT ZNOVA</string>
+	<string name="end_butt">UKONČIT</string>
+	<string name="new_game">NOVÁ HRA</string>
+	<string name="top_score">SKÓRE</string>
+	<string name="settings">NASTAVENÍ</string>
+	<string name="back">ZPÁTKY</string>
+	<string name="sound">Zapnout/vypnout hudbu</string>
+	<string name="effect">Zapnout/vypnout efekty</string>
+	<string name="sound_off">Hudba byla vypnutá</string>
+	<string name="sound_on">Hudba byla zapnutá</string>
+	<string name="effect_off">Efekty byly vypnuté</string>
+	<string name="effect_on">Efekty byly zapnuté</string>
 </resources>

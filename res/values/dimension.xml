@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">1sp</dimen>
+	<dimen name="score_text_size">25sp</dimen>
+	<dimen name="layout_width">60sp</dimen>
+</resources>

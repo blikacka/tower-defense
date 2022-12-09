@@ -1,3 +1,15 @@
-# view AndroidManifest.xml #generated:14
+# view AndroidManifest.xml #generated:24
+-keep class com.project.EndActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
 -keep class com.project.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class com.project.ScoreActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.project.SettingsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:14
+-keep class com.project.StartActivity { <init>(...); }
 

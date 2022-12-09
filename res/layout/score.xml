@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageView
+		android:id="@+id/bg"
+		android:scaleType="fitCenter"
+		android:src="@drawable/grass"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"/>
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+	
+		<TextView 
+			android:text="@string/top_score"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/margin"
+			android:textSize="@dimen/score_text_size"/>
+	</RelativeLayout>
+	
+	<LinearLayout
+		android:gravity="center"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical" >
+		
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/margin">
+
+			<TextView 
+				android:text="1."
+				android:layout_width="@dimen/layout_width"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/margin"
+				android:textSize="@dimen/score_text_size"/>
+			<TextView 
+				android:text="0"
+				android:id="@+id/text1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/margin"
+				android:textSize="@dimen/score_text_size"/>
+	        
+		</LinearLayout>
+	    
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/margin" >
+
+			<TextView 
+				android:text="2."
+				android:layout_width="@dimen/layout_width"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/margin"
+				android:textSize="@dimen/score_text_size"/>
+			<TextView 
+				android:text="0"
+				android:id="@+id/text2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/margin"
+				android:textSize="@dimen/score_text_size"/>
+	        
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/margin" >
+
+			<TextView 
+				android:text="3."
+				android:layout_width="@dimen/layout_width"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/margin"
+				android:textSize="@dimen/score_text_size"/>
+			<TextView 
+				android:text="0"
+				android:id="@+id/text3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/margin"
+				android:textSize="@dimen/score_text_size"/>
+	        
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_margin="@dimen/margin">
+
+			<TextView 
+				android:text="4."
+				android:layout_width="@dimen/layout_width"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/margin"
+				android:textSize="@dimen/score_text_size"/>
+			<TextView 
+				android:text="0"
+				android:id="@+id/text4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/margin"
+				android:textSize="@dimen/score_text_size"/>
+	        
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/margin" >
+
+			<TextView 
+				android:text="5."
+				android:layout_width="@dimen/layout_width"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/margin"
+				android:textSize="@dimen/score_text_size"/>
+			<TextView 
+				android:text="0"
+				android:id="@+id/text5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/margin"
+				android:textSize="@dimen/score_text_size"/>
+	        
+		</LinearLayout>
+		
+	</LinearLayout>
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/back_butt"
+
+			android:text="@string/back"
+			android:textColor="@color/text_color"
+			android:textSize="@dimen/score_text_size"
+
+			android:layout_width="fill_parent"
+			android:layout_height="61dp"
+			android:background="@drawable/buttonshape"
+			android:shadowColor="#A8A8A8"
+			android:shadowDx="0"
+			android:shadowDy="0"
+			android:shadowRadius="5"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+		/>
+	</RelativeLayout>
+	
+</FrameLayout>

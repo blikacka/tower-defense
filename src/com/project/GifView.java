@@ -13,10 +13,8 @@ import android.graphics.Canvas;
 import android.graphics.Movie;
 import android.util.Log;
 import android.view.View;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
-public class GifView extends View implements Runnable {
+public class GifView extends View {
 
 	private InputStream gifInputStream;
 	private Movie gifMovie;
@@ -29,21 +27,24 @@ public class GifView extends View implements Runnable {
 	int x;
 	int y;
 
-	public GifView(Context context, String item) {
+	public GifView(Context context, String item, int sizeScreenX, int sizeScreenY, int scale) {
 		super(context);
 		this.context = context;
 		this.canvas = new Canvas();
 		this.item = item;
 		
 		setFocusable(true);
-		int ide = context.getResources().getIdentifier(getItem(), "drawable", "com.project");
+		int ide = context.getResources().getIdentifier(item, "drawable", "com.project");
 		gifInputStream = context.getResources().openRawResource(ide);
 
 		byte[] array = streamToBytes(gifInputStream);
 		gifMovie = Movie.decodeByteArray(array, 0, array.length);
 
-		movieWidth = gifMovie.width();
-		movieHeight = gifMovie.height();
+		movieWidth = sizeScreenX / Map.numX * scale;
+		movieHeight = sizeScreenY / Map.numY * scale;
+		
+//		movieWidth = gifMovie.width();
+//		movieHeight = gifMovie.height();
 		movieDuration = gifMovie.duration();
 		
 	}

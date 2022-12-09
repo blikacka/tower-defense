@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageView
+		android:id="@+id/bg"
+		android:scaleType="fitCenter"
+		android:src="@drawable/grass"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"/>
+	
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<TextView 
+			android:text="@string/settings"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/margin"
+			android:textSize="@dimen/score_text_size"/>
+	</RelativeLayout>
+	<LinearLayout
+		android:gravity="center"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical" >
+		<Button
+			android:id="@+id/sound_butt"
+
+			android:text="@string/sound"
+			android:textColor="@color/text_color"
+			android:textSize="@dimen/score_text_size"
+
+			android:layout_width="fill_parent"
+			android:layout_height="61dp"
+			android:background="@drawable/buttonshape"
+			android:shadowColor="#A8A8A8"
+			android:shadowDx="0"
+			android:shadowDy="0"
+			android:shadowRadius="5"
+			android:layout_marginBottom="10sp"
+		/>
+		<Button
+			android:id="@+id/effect_butt"
+
+			android:text="@string/effect"
+			android:textColor="@color/text_color"
+			android:textSize="@dimen/score_text_size"
+
+			android:layout_width="fill_parent"
+			android:layout_height="61dp"
+			android:background="@drawable/buttonshape"
+			android:shadowColor="#A8A8A8"
+			android:shadowDx="0"
+			android:shadowDy="0"
+			android:shadowRadius="5"
+			android:layout_marginBottom="10sp"
+		/>
+		
+	</LinearLayout>
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/back_butt"
+
+			android:text="@string/back"
+			android:textColor="@color/text_color"
+			android:textSize="@dimen/score_text_size"
+
+			android:layout_width="fill_parent"
+			android:layout_height="61dp"
+			android:background="@drawable/buttonshape"
+			android:shadowColor="#A8A8A8"
+			android:shadowDx="0"
+			android:shadowDy="0"
+			android:shadowRadius="5"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+		/>
+	</RelativeLayout>
+	
+</FrameLayout>

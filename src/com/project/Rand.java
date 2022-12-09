@@ -22,4 +22,10 @@ public class Rand {
 		int randomNum = rand.nextInt((max - min) + 1) + min;
 		return randomNum;
 	}
+
+	public double randDouble(double min, double max) {
+		Random r = new Random();
+		double randomValue = min + (max - min) * r.nextDouble();
+		return randomValue;
+	}
 }

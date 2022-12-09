@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageView
+		android:id="@+id/bg"
+		android:scaleType="fitCenter"
+		android:src="@drawable/grass"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"/>
+	
+	
+	<RelativeLayout
+		android:gravity="center"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+		<TextView
+			android:text="@string/game_over"
+			android:textSize="30sp"
+			android:textColor="@color/text_color"
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent"
+			android:gravity="center"/>
+
+		<Button
+			android:id="@+id/play_again_butt"
+
+			android:text="@string/play_again"
+			android:textColor="@color/text_color"
+			android:textSize="30sp"
+
+			android:layout_width="fill_parent"
+			android:layout_height="61dp"
+			android:background="@drawable/buttonshape"
+			android:shadowColor="#A8A8A8"
+			android:shadowDx="0"
+			android:shadowDy="0"
+			android:shadowRadius="5"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+		/>
+
+	</RelativeLayout>
+	
+	
+</FrameLayout>
